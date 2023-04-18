@@ -6,4 +6,11 @@ def main(a):
     Returns:
         True or False
     """
-    return
+    b=len(a)%2
+    if b==0:
+        s=True
+    elif b==1:
+        s=False
+    return s
+a=str(input())
+print(main(a))
