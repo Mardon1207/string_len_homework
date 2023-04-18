@@ -8,4 +8,19 @@ def main(s1,s2,s3):
     Returns:
         string
     """
-    return
+    a=len(s1)
+    b=len(s2)
+    c=len(s3)
+    s=""
+    if a%2==1:
+        s=s+s1+" "
+    if b%2==1:
+        s=s+s2+" "
+    if c%2==1:
+        s=s+s3
+    return "["+s+"]"
+s1=str(input())
+s2=str(input())
+s3=str(input())
+print(main(s1,s2,s3))
+
