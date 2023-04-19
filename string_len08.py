@@ -8,4 +8,13 @@ def main(s):
     Returns:
         str: answer
     """
-    return
+
+    n=len(s)%2
+    a=len(s)//2
+    if n==0:
+        d=s[a-1:a+1]
+    else:
+        d=s[a]
+    return d
+s=str(input())
+print(main(s))
